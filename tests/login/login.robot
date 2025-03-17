@@ -30,6 +30,6 @@ Register a New Product
     Add User Information
     Check Adm Box
     Click Register button
-    Sleep    5
+    Sleep    3
     Verify Home
     Register Product

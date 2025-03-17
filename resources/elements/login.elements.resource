@@ -22,4 +22,6 @@ ${PRODUCT_NAME}            //*[@id="nome"]
 ${PRODUCT_PRICE}           //*[@id="price"]
 ${PRODUCT_DESCRIPTION}     //*[@id="description"]
 ${QUANTITY}                //*[@id="quantity"]
-${BTN_PRODUCT}             //*[@id="root"]/div/div/div/form/div[7]/div/button
+${SERVEREST_IMAGE}         //*[@id="imagem"]
+${BTN_PRODUCT}             //button[text()="Cadastrar"]
+                           

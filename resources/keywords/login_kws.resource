@@ -2,6 +2,7 @@
 Documentation    create the keywords used to login
 Resource    ../utils/resources.resource
 
+Library    Process
 
 *** Keywords ***
 Access The Enviroment
@@ -49,6 +50,15 @@ Register Product
     Sleep    1
     Add data    ${PRODUCT_DESCRIPTION}    ${random_product_description}
     Sleep    1
-    Add data    ${QUANTITY}    ${QUANTITY}
+    Add data    ${QUANTITY}    ${quantity_random}
     Sleep    1
+    Press Keys    None    PAGE_DOWN
+   # Choose File    ${SERVEREST_IMAGE}    C:\serverest_image 
+    #Run Keyword And Ignore Error    ${SERVEREST_IMAGE}    
+    #Click Image    ${SERVEREST_IMAGE}   
+    #Click Elements    ${SERVEREST_IMAGE}
+    #Wait For Process    10
+    Sleep    2
     Click Elements    ${BTN_PRODUCT}
+    Sleep    2
+    

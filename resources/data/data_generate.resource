@@ -19,12 +19,12 @@ Data Generation
     Set Suite Variable    ${random_product_name}
 
     ${3digits}    Random Number    3
-    ${2digits}    Random Number    2
+    ${2digits}    Random Digit    
 
-    Set Suite Variable    ${random_price}      ${3digits},${2digits}
+    Set Suite Variable    ${random_price}      ${3digits}
     
     ${random_product_description}    Generate Random String    100     [LETTERS]
     Set Suite Variable    ${random_product_description}
 
-    ${QUANTITY}    Generate Random String    2    [NUMBERS]
-    Set Suite Variable    ${QUANTITY}
+    ${quantity_random}    Set Variable    ${2digits}
+     Set Suite Variable    ${quantity_random}
